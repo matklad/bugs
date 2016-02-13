@@ -1,0 +1,19 @@
+Some bugs I've created *and noticed*.
+
+1. Python. Typo in
+
+def sorted_blocks(blocks):
+    """Turn a stream of blocks into a stream of sorted blocks"""
+
+    for block in blocks:
+        yield sorted(blocks)
+
+blocks -> block.
+
+10 min
+
+Fixes:
+
+* type system
+* name short lived `block` as `b`
+* avoid `block` altogether, and use `map`
