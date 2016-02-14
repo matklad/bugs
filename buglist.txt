@@ -17,3 +17,23 @@ Fixes:
 * type system
 * name short lived `block` as `b`
 * avoid `block` altogether, and use `map`
+
+
+2. Kotlin. Iterate `Sequence` twice
+
+fun extractErrors(lines: Sequence<String>): Sequence<RawErrorInfo> {
+    val matcher = ErrorMatchingDFA()
+    return sequence {
+        for (line in lines) {
+            matcher.feed(line)?.let { return@sequence it }
+        }
+        return@sequence matcher.feed(null)
+    }
+}
+
+1 min
+
+Fixes:
+
+* Read sequence API thoroughly
+* Don't ignore `constrainOnce` function and study it carefully
