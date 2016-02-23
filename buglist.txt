@@ -37,3 +37,14 @@ Fixes:
 
 * Read sequence API thoroughly
 * Don't ignore `constrainOnce` function and study it carefully
+
+3. Kotlin. Fallback to the wrong default.
+
+val pathToCargo = settings?.cargoPath ?: CargoConstants.CARGO_EXECUTABLE_NAME
+
+5 min
+
+Fixes:
+
+* don't select a default for the sake of a selected default, investigate the way to signal error.
+* read the documentation!
