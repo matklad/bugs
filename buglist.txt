@@ -48,3 +48,14 @@ Fixes:
 
 * don't select a default for the sake of a selected default, investigate the way to signal error.
 * read the documentation!
+
+4. Kotlin. Assuming that data classes are serializable
+
+A ton of code to create unnecessary wrapping.
+
+3 days
+
+Fixes:
+
+* question assumptions!
+* read the documentation!
