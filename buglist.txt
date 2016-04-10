@@ -59,3 +59,25 @@ Fixes:
 
 * question assumptions!
 * read the documentation!
+
+5. Kotlin. Wrong automated refactoing.
+
+A shadowing was introduce by auto refactoring lambda to use implicit `it` parameter.
+
+40 min.
+
+Fixes:
+
+* Avoid nested lambdas?
+
+6. Kotlin. Not appending `.exe` to the executable in one of two cases.
+
+When executing a thing, an `.exe` was correctly appended to the path to execute. However, when probing for availability of the thing, `.exe` was not appended.
+
+1 hour
+
+Fixes:
+
+* Don't ignore code smell. Fix low priority issues first?
+* Test on windows.
+* In `doAction` function, require an evidence that `canDoAction` was called.
