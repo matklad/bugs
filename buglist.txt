@@ -81,3 +81,12 @@ Fixes:
 * Don't ignore code smell. Fix low priority issues first?
 * Test on windows.
 * In `doAction` function, require an evidence that `canDoAction` was called.
+
+7. Kotlin. Listening to file saving events and don't listening to document modification events.
+
+Not fixed.
+
+Fixes:
+
+* Think about how BulkFileListener is implemented.
+* Study carefully existing implementations of similar listeners.
